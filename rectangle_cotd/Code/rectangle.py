@@ -7,5 +7,5 @@ class Rectangle:
     def area(self):
         return (self.length * self.width)
 
-Rec = Rectangle(3,6)
-Rec.area()
+rec = Rectangle(3,6)
+rec.area()

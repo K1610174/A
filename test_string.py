@@ -1,11 +1,12 @@
 import pytest 
-#import file
+import string_gen
 
 def test_string_gen_data_type():
-    assert string_gen.string_gen("words") == ""
+    assert isinstance(string_gen.string_gen(), str) == True
 
 def test_string_gen_five_chars():
-    assert string_gen.string_gen(len("words"))==5
+    assert len(string_gen.string_gen())==5
 
 def test_string_gen_lowercase():
-    assert string_gen.string_gen("words".islower())==True
+    for _ in range(20):
+        assert string_gen.string_gen().islower()== True

@@ -2,7 +2,7 @@ import pytest
 import string_gen
 
 def test_string_gen_data_type():
-    assert isistance(string_gen.string_gen(), str) == True
+    assert isinstance(string_gen.string_gen(), str) == True
 
 def test_string_gen_five_chars():
     assert len(string_gen.string_gen())==5
